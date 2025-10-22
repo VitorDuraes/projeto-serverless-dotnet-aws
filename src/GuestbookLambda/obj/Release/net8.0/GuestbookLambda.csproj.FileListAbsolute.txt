@@ -1,0 +1,12 @@
+/home/zito/projeto-serveless/src/GuestbookLambda/bin/Release/net8.0/GuestbookLambda.deps.json
+/home/zito/projeto-serveless/src/GuestbookLambda/bin/Release/net8.0/GuestbookLambda.dll
+/home/zito/projeto-serveless/src/GuestbookLambda/bin/Release/net8.0/GuestbookLambda.pdb
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/GuestbookLambda.csproj.AssemblyReference.cache
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/GuestbookLambda.GeneratedMSBuildEditorConfig.editorconfig
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/GuestbookLambda.AssemblyInfoInputs.cache
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/GuestbookLambda.AssemblyInfo.cs
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/GuestbookLambda.csproj.CoreCompileInputs.cache
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/GuestbookLambda.dll
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/refint/GuestbookLambda.dll
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/GuestbookLambda.pdb
+/home/zito/projeto-serveless/src/GuestbookLambda/obj/Release/net8.0/ref/GuestbookLambda.dll

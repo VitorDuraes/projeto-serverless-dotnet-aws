@@ -1,0 +1,8 @@
+/home/zito/projeto-serveless/publish/GuestbookLambda.dll
+/home/zito/projeto-serveless/publish/GuestbookLambda.deps.json
+/home/zito/projeto-serveless/publish/GuestbookLambda.pdb
+/home/zito/projeto-serveless/publish/Amazon.Lambda.APIGatewayEvents.dll
+/home/zito/projeto-serveless/publish/Amazon.Lambda.Core.dll
+/home/zito/projeto-serveless/publish/Amazon.Lambda.Serialization.SystemTextJson.dll
+/home/zito/projeto-serveless/publish/AWSSDK.Core.dll
+/home/zito/projeto-serveless/publish/AWSSDK.DynamoDBv2.dll

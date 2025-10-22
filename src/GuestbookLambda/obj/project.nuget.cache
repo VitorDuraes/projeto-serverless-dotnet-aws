@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "HGMiz4okFlVktbnAU+yoHcVvjQyyyI3zwAFjEKQ+0DVMywOSTYTamCyYM3oGykqxP5vJ1mxVBjGskC/NDwgZ0Q==",
+  "success": true,
+  "projectFilePath": "/home/zito/projeto-serveless/src/GuestbookLambda/GuestbookLambda.csproj",
+  "expectedPackageFiles": [
+    "/home/zito/.nuget/packages/amazon.lambda.apigatewayevents/2.7.0/amazon.lambda.apigatewayevents.2.7.0.nupkg.sha512",
+    "/home/zito/.nuget/packages/amazon.lambda.core/2.2.0/amazon.lambda.core.2.2.0.nupkg.sha512",
+    "/home/zito/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.4.1/amazon.lambda.serialization.systemtextjson.2.4.1.nupkg.sha512",
+    "/home/zito/.nuget/packages/awssdk.core/3.7.304.29/awssdk.core.3.7.304.29.nupkg.sha512",
+    "/home/zito/.nuget/packages/awssdk.dynamodbv2/3.7.305/awssdk.dynamodbv2.3.7.305.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "GuestbookLambda depends on AWSSDK.DynamoDBv2 (>= 3.7.304.13) but AWSSDK.DynamoDBv2 3.7.304.13 was not found. An approximate best match of AWSSDK.DynamoDBv2 3.7.305 was resolved.",
+      "libraryId": "AWSSDK.DynamoDBv2",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

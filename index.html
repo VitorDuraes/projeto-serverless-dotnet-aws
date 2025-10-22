@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livro de Visitas Serverless</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        background: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      #messages {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        background: #fff;
+      }
+      #messages li {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+      }
+      #messages li:last-child {
+        border-bottom: none;
+      }
+      form {
+        display: flex;
+      }
+      input[type="text"] {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      button {
+        padding: 10px 15px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meu Livro de Visitas (V2!)</h1>
+    <form id="messageForm">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Deixe sua mensagem..."
+        required
+      />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Mensagens:</h2>
+    <ul id="messages">
+      <li>Carregando...</li>
+    </ul>
+
+    <script>
+      // O Terraform vai substituir este marcador pelo URL real do API Gateway
+      const API_URL = "{{ API_URL }}/messages";
+      // 1. Função para carregar as mensagens (GET)
+      async function loadMessages() {
+        const messagesList = document.getElementById("messages");
+        try {
+          const response = await fetch(API_URL);
+          const messages = await response.json();
+
+          messagesList.innerHTML = ""; // Limpa o "Carregando..."
+
+          if (messages.length === 0) {
+            messagesList.innerHTML = "<li>Nenhuma mensagem ainda.</li>";
+          }
+
+          messages.forEach((msg) => {
+            const li = document.createElement("li");
+            li.textContent = msg.message;
+            messagesList.appendChild(li);
+          });
+        } catch (error) {
+          console.error("Erro ao carregar mensagens:", error);
+          messagesList.innerHTML = "<li>Erro ao carregar mensagens.</li>";
+        }
+      }
+
+      // 2. Função para postar uma nova mensagem (POST)
+      document
+        .getElementById("messageForm")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const input = document.getElementById("messageInput");
+          const messageText = input.value;
+
+          try {
+            await fetch(API_URL, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ message: messageText }),
+            });
+
+            input.value = ""; // Limpa o campo
+            loadMessages(); // Recarrega a lista
+          } catch (error) {
+            console.error("Erro ao postar mensagem:", error);
+            alert("Erro ao enviar mensagem.");
+          }
+        });
+
+      // 3. Carrega as mensagens quando a página abre
+      window.addEventListener("load", loadMessages);
+    </script>
+  </body>
+</html>

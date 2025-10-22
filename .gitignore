@@ -1,0 +1,31 @@
+# --- Terraform ---
+# Arquivos de estado local (Contêm segredos!)
+*.tfstate
+*.tfstate.backup
+
+# Diretório de plugins e módulos locais
+.terraform/
+
+# Arquivo de lock (pode ser incluído, mas é melhor ignorar 
+# para forçar o 'init' em novas máquinas)
+.terraform.lock.hcl
+
+# Arquivos de deploy gerados
+*.zip
+
+# --- .NET (C#) ---
+# Pastas de compilação
+*/[Bb]in/
+*/[Oo]bj/
+
+# Pasta de publicação
+*/[Pp]ublish/
+
+# Arquivos de solução e de usuário (gerados pelo Visual Studio)
+*.sln
+*.suo
+*.user
+
+# --- OS ---
+.DS_Store
+Thumbs.db
