@@ -41,7 +41,7 @@ Antes de começar, garanta que você tenha:
 Primeiro, clone este repositório:
 
 ```bash
-git clone [https://github.com/VitorDuraesUSUARIO/projeto-serverless-dotnet-aws.git](https://github.com/VitorDuraes/projeto-serverless-dotnet-aws.git)
+git clone [https://github.com/VitorDuraes/projeto-serverless-dotnet-aws.git](https://github.com/VitorDuraes/projeto-serverless-dotnet-aws.git)
 cd projeto-serverless-dotnet-aws
 ```
 
