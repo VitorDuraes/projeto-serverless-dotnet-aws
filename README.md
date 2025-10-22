@@ -1,0 +1,1 @@
+# projeto-serverless-dotnet-aws
